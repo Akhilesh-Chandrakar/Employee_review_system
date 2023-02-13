@@ -2,8 +2,8 @@
 const mongoose = require('mongoose');
 
 // connect from mongodb
-// mongoose.connect('mongodb://localhost:27017/Review-System');
-mongoose.connect(" mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0");
+ mongoose.connect('mongodb://localhost:27017/Review-System');
+//mongoose.connect(" mongodb+srv://Akhilesh:AS7nLgPFj6oDTd4u@cluster0.dudg0cl.mongodb.net/test");
 
 // aquire connection if it is succesful
 const db = mongoose.connection;

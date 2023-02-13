@@ -41,7 +41,7 @@ app.use(session({
         maxAge : (1000 * 60 * 100)
     },
     store:MongoStore.create({
-        mongoUrl: ' mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0',
+        mongoUrl: 'mongodb://localhost:27017/habit',
         autoRemove : 'disabled',
     }, function(err){
         console.log(err || 'connect-mongodb setup');
@@ -61,4 +61,5 @@ app.listen(port, function(err){
         return;
     }
     console.log(`Server running on port ${port}.`);
+    //
 });
